@@ -11,7 +11,7 @@ def search_arxiv(keywords_list):
             max_results=10,
             sort_by=arxiv.SortCriterion.SubmittedDate
         )
-        print(f"Searching for '{keywords}' in titles...")
+
         try:
             for result in arxiv.Client().results(search):
                 results.append({
