@@ -1,0 +1,681 @@
+title,authors,published,summary,keywords
+AutoAL: Automated Active Learning with Differentiable Query Strategy Search,"Yifeng Wang, Xueying Zhan, Siyu Huang",2024-10-17,"As deep learning continues to evolve, the need for data efficiency becomes
+increasingly important. Considering labeling large datasets is both
+time-consuming and expensive, active learning (AL) provides a promising
+solution to this challenge by iteratively selecting the most informative
+subsets of examples to train deep neural networks, thereby reducing the
+labeling cost. However, the effectiveness of different AL algorithms can vary
+significantly across data scenarios, and determining which AL algorithm best
+fits a given task remains a challenging problem. This work presents the first
+differentiable AL strategy search method, named AutoAL, which is designed on
+top of existing AL sampling strategies. AutoAL consists of two neural nets,
+named SearchNet and FitNet, which are optimized concurrently under a
+differentiable bi-level optimization framework. For any given task, SearchNet
+and FitNet are iteratively co-optimized using the labeled data, learning how
+well a set of candidate AL algorithms perform on that task. With the optimal AL
+strategies identified, SearchNet selects a small subset from the unlabeled pool
+for querying their annotations, enabling efficient training of the task model.
+Experimental results demonstrate that AutoAL consistently achieves superior
+accuracy compared to all candidate AL algorithms and other selective AL
+approaches, showcasing its potential for adapting and integrating multiple
+existing AL methods across diverse tasks and domains. Code will be available
+at: https://github.com/haizailache999/AutoAL.",deep learning
+Learning Graph Quantized Tokenizers for Transformers,"Limei Wang, Kaveh Hassani, Si Zhang, Dongqi Fu, Baichuan Yuan, Weilin Cong, Zhigang Hua, Hao Wu, Ning Yao, Bo Long",2024-10-17,"Transformers serve as the backbone architectures of Foundational Models,
+where a domain-specific tokenizer helps them adapt to various domains. Graph
+Transformers (GTs) have recently emerged as a leading model in geometric deep
+learning, outperforming Graph Neural Networks (GNNs) in various graph learning
+tasks. However, the development of tokenizers for graphs has lagged behind
+other modalities, with existing approaches relying on heuristics or GNNs
+co-trained with Transformers. To address this, we introduce GQT (\textbf{G}raph
+\textbf{Q}uantized \textbf{T}okenizer), which decouples tokenizer training from
+Transformer training by leveraging multi-task graph self-supervised learning,
+yielding robust and generalizable graph tokens. Furthermore, the GQT utilizes
+Residual Vector Quantization (RVQ) to learn hierarchical discrete tokens,
+resulting in significantly reduced memory requirements and improved
+generalization capabilities. By combining the GQT with token modulation, a
+Transformer encoder achieves state-of-the-art performance on 16 out of 18
+benchmarks, including large-scale homophilic and heterophilic datasets. The
+code is available at: https://github.com/limei0307/graph-tokenizer",deep learning
+CrystalX: Ultra-Precision Crystal Structure Resolution and Error Correction Using Deep Learning,"Kaipeng Zheng, Weiran Huang, Wanli Ouyang, Han-Sen Zhong, Yuqiang Li",2024-10-17,"Atomic structure analysis of crystalline materials is a paramount endeavor in
+both chemical and material sciences. This sophisticated technique necessitates
+not only a solid foundation in crystallography but also a profound
+comprehension of the intricacies of the accompanying software, posing a
+significant challenge in meeting the rigorous daily demands. For the first
+time, we confront this challenge head-on by harnessing the power of deep
+learning for ultra-precise structural analysis at the full-atom level. To
+validate the performance of the model, named CrystalX, we employed a vast
+dataset comprising over 50,000 X-ray diffraction measurements derived from
+authentic experiments, demonstrating performance that is commensurate with
+human experts and adept at deciphering intricate geometric patterns.
+Remarkably, CrystalX revealed that even peer-reviewed publications can harbor
+errors that are stealthy to human scrutiny, yet CrystalX adeptly rectifies
+them. This deep learning model revolutionizes the time frame for crystal
+structure analysis, slashing it down to seconds. It has already been
+successfully applied in the structure analysis of newly discovered compounds in
+the latest research without human intervention. Overall, CrystalX marks the
+beginning of a new era in automating routine structural analysis within
+self-driving laboratories.",deep learning
+On-device Federated Learning in Smartphones for Detecting Depression from Reddit Posts,"Mustofa Ahmed, Abdul Muntakim, Nawrin Tabassum, Mohammad Asifur Rahim, Faisal Muhammad Shah",2024-10-17,"Depression detection using deep learning models has been widely explored in
+previous studies, especially due to the large amounts of data available from
+social media posts. These posts provide valuable information about individuals'
+mental health conditions and can be leveraged to train models and identify
+patterns in the data. However, distributed learning approaches have not been
+extensively explored in this domain. In this study, we adopt Federated Learning
+(FL) to facilitate decentralized training on smartphones while protecting user
+data privacy. We train three neural network architectures--GRU, RNN, and LSTM
+on Reddit posts to detect signs of depression and evaluate their performance
+under heterogeneous FL settings. To optimize the training process, we leverage
+a common tokenizer across all client devices, which reduces the computational
+load. Additionally, we analyze resource consumption and communication costs on
+smartphones to assess their impact in a real-world FL environment. Our
+experimental results demonstrate that the federated models achieve comparable
+performance to the centralized models. This study highlights the potential of
+FL for decentralized mental health prediction by providing a secure and
+efficient model training process on edge devices.",deep learning
+Label-free prediction of fluorescence markers in bovine satellite cells using deep learning,"Sania Sinha, Aarham Wasit, Won Seob Kim, Jongkyoo Kim, Jiyoon Yi",2024-10-17,"Assessing the quality of bovine satellite cells (BSCs) is essential for the
+cultivated meat industry, which aims to address global food sustainability
+challenges. This study aims to develop a label-free method for predicting
+fluorescence markers in isolated BSCs using deep learning. We employed a
+U-Net-based CNN model to predict multiple fluorescence signals from a single
+bright-field microscopy image of cell culture. Two key biomarkers, DAPI and
+Pax7, were used to determine the abundance and quality of BSCs. The image
+pre-processing pipeline included fluorescence denoising to improve prediction
+performance and consistency. A total of 48 biological replicates were used,
+with statistical performance metrics such as Pearson correlation coefficient
+and SSIM employed for model evaluation. The model exhibited better performance
+with DAPI predictions due to uniform staining. Pax7 predictions were more
+variable, reflecting biological heterogeneity. Enhanced visualization
+techniques, including color mapping and image overlay, improved the
+interpretability of the predictions by providing better contextual and
+perceptual information. The findings highlight the importance of data
+pre-processing and demonstrate the potential of deep learning to advance
+non-invasive, label-free assessment techniques in the cultivated meat industry,
+paving the way for reliable and actionable AI-driven evaluations.",deep learning
+Enhanced Prompt-leveraged Weakly Supervised Cancer Segmentation based on Segment Anything,"Joonhyeon Song, Seohwan Yun, Seongho Yoon, Joohyeok Kim, Sangmin Lee",2024-10-17,"This work proposes a novel approach beyond supervised learning for effective
+pathological image analysis, addressing the challenge of limited robust labeled
+data. Pathological diagnosis of diseases like cancer has conventionally relied
+on the evaluation of morphological features by physicians and pathologists.
+However, recent advancements in compute-aided diagnosis (CAD) systems are
+gaining significant attention as diagnostic support tools. Although the
+advancement of deep learning has improved CAD significantly, segmentation
+models typically require large pixel-level annotated dataset, and such labeling
+is expensive. Existing studies not based on supervised approaches still
+struggle with limited generalization, and no practical approach has emerged
+yet. To address this issue, we present a weakly supervised semantic
+segmentation (WSSS) model by combining class activation map and Segment
+Anything Model (SAM)-based pseudo-labeling. For effective pretraining, we adopt
+the SAM-a foundation model that is pretrained on large datasets and operates in
+zero-shot configurations using only coarse prompts. The proposed approach
+transfer enhanced Attention Dropout Layer's knowledge to SAM, thereby
+generating pseudo-labels. To demonstrate the superiority of the proposed
+method, experimental studies are conducted on histopathological breast cancer
+datasets. The proposed method outperformed other WSSS methods across three
+datasets, demonstrating its efficiency by achieving this with only 12GB of GPU
+memory during training. Our code is available at :
+https://github.com/QI-NemoSong/EPLC-SAM",deep learning
+Align-ULCNet: Towards Low-Complexity and Robust Acoustic Echo and Noise Reduction,"Shrishti Saha Shetu, Naveen Kumar Desiraju, Wolfgang Mack, Emanuël A. P. Habets",2024-10-17,"The successful deployment of deep learning-based acoustic echo and noise
+reduction (AENR) methods in consumer devices has spurred interest in developing
+low-complexity solutions, while emphasizing the need for robust performance in
+real-life applications. In this work, we propose a hybrid approach to enhance
+the state-of-the-art (SOTA) ULCNet model by integrating time alignment and
+parallel encoder blocks for the model inputs, resulting in better echo
+reduction and comparable noise reduction performance to existing SOTA methods.
+We also propose a channel-wise sampling-based feature reorientation method,
+ensuring robust performance across many challenging scenarios, while
+maintaining overall low computational and memory requirements.",deep learning
+Material Fingerprinting: Identifying and Predicting Perceptual Attributes of Material Appearance,"Jiri Filip, Filip Dechterenko, Filipp Schmidt, Jiri Lukavsky, Veronika Vilimovska, Jan Kotera, Roland W. Fleming",2024-10-17,"The world is abundant with diverse materials, each possessing unique surface
+appearances that play a crucial role in our daily perception and understanding
+of their properties. Despite advancements in technology enabling the capture
+and realistic reproduction of material appearances for visualization and
+quality control, the interoperability of material property information across
+various measurement representations and software platforms remains a complex
+challenge. A key to overcoming this challenge lies in the automatic
+identification of materials' perceptual features, enabling intuitive
+differentiation of properties stored in disparate material data
+representations. We reasoned that for many practical purposes, a compact
+representation of the perceptual appearance is more useful than an exhaustive
+physical description.This paper introduces a novel approach to material
+identification by encoding perceptual features obtained from dynamic visual
+stimuli. We conducted a psychophysical experiment to select and validate 16
+particularly significant perceptual attributes obtained from videos of 347
+materials. We then gathered attribute ratings from over twenty participants for
+each material, creating a 'material fingerprint' that encodes the unique
+perceptual properties of each material. Finally, we trained a multi-layer
+perceptron model to predict the relationship between statistical and deep
+learning image features and their corresponding perceptual properties. We
+demonstrate the model's performance in material retrieval and filtering
+according to individual attributes. This model represents a significant step
+towards simplifying the sharing and understanding of material properties in
+diverse digital environments regardless of their digital representation,
+enhancing both the accuracy and efficiency of material identification.",deep learning
+Deep-learning recognition and tracking of individual nanotubes in low-contrast microscopy videos,"Vladimir Pimonov, Said Tahir, Vincent Jourdain",2024-10-17,"This study addresses the challenge of analyzing the growth kinetics of carbon
+nanotubes using in-situ homodyne polarization microscopy (HPM) by developing an
+automated deep learning (DL) approach. A Mask-RCNN architecture, enhanced with
+a ResNet-50 backbone, was employed to recognize and track individual nanotubes
+in microscopy videos, significantly improving the efficiency and
+reproducibility of kinetic data extraction. The method involves a series of
+video processing steps to enhance contrast and used differential treatment
+techniques to manage low signal and fast kinetics. The DL model demonstrates
+consistency with manual measurements and increased throughput, laying the
+foundation for statistical studies of nanotube growth. The approach can be
+adapted for other types of in-situ microscopy studies, emphasizing the
+importance of automation in high-throughput data acquisition for research on
+individual nano-objects.",deep learning
+OAH-Net: A Deep Neural Network for Hologram Reconstruction of Off-axis Digital Holographic Microscope,"Wei Liu, Kerem Delikoyun, Qianyu Chen, Alperen Yildiz, Si Ko Myo, Win Sen Kuan, John Tshon Yit Soong, Matthew Edward Cove, Oliver Hayden, Hweekuan Lee",2024-10-17,"Off-axis digital holographic microscopy is a high-throughput, label-free
+imaging technology that provides three-dimensional, high-resolution information
+about samples, particularly useful in large-scale cellular imaging. However,
+the hologram reconstruction process poses a significant bottleneck for timely
+data analysis. To address this challenge, we propose a novel reconstruction
+approach that integrates deep learning with the physical principles of off-axis
+holography. We initialized part of the network weights based on the physical
+principle and then fine-tuned them via weakly supersized learning. Our off-axis
+hologram network (OAH-Net) retrieves phase and amplitude images with errors
+that fall within the measurement error range attributable to hardware, and its
+reconstruction speed significantly surpasses the microscope's acquisition rate.
+Crucially, OAH-Net demonstrates remarkable external generalization capabilities
+on unseen samples with distinct patterns and can be seamlessly integrated with
+other models for downstream tasks to achieve end-to-end real-time hologram
+analysis. This capability further expands off-axis holography's applications in
+both biological and medical studies.",deep learning
+Fluid: Scaling Autoregressive Text-to-image Generative Models with Continuous Tokens,"Lijie Fan, Tianhong Li, Siyang Qin, Yuanzhen Li, Chen Sun, Michael Rubinstein, Deqing Sun, Kaiming He, Yonglong Tian",2024-10-17,"Scaling up autoregressive models in vision has not proven as beneficial as in
+large language models. In this work, we investigate this scaling problem in the
+context of text-to-image generation, focusing on two critical factors: whether
+models use discrete or continuous tokens, and whether tokens are generated in a
+random or fixed raster order using BERT- or GPT-like transformer architectures.
+Our empirical results show that, while all models scale effectively in terms of
+validation loss, their evaluation performance -- measured by FID, GenEval
+score, and visual quality -- follows different trends. Models based on
+continuous tokens achieve significantly better visual quality than those using
+discrete tokens. Furthermore, the generation order and attention mechanisms
+significantly affect the GenEval score: random-order models achieve notably
+better GenEval scores compared to raster-order models. Inspired by these
+findings, we train Fluid, a random-order autoregressive model on continuous
+tokens. Fluid 10.5B model achieves a new state-of-the-art zero-shot FID of 6.16
+on MS-COCO 30K, and 0.69 overall score on the GenEval benchmark. We hope our
+findings and results will encourage future efforts to further bridge the
+scaling gap between vision and language models.",machine learning
+How Numerical Precision Affects Mathematical Reasoning Capabilities of LLMs,"Guhao Feng, Kai Yang, Yuntian Gu, Xinyue Ai, Shengjie Luo, Jiacheng Sun, Di He, Zhenguo Li, Liwei Wang",2024-10-17,"Despite the remarkable success of Transformer-based Large Language Models
+(LLMs) across various domains, understanding and enhancing their mathematical
+capabilities remains a significant challenge. In this paper, we conduct a
+rigorous theoretical analysis of LLMs' mathematical abilities, with a specific
+focus on their arithmetic performances. We identify numerical precision as a
+key factor that influences their effectiveness in mathematical tasks. Our
+results show that Transformers operating with low numerical precision fail to
+address arithmetic tasks, such as iterated addition and integer multiplication,
+unless the model size grows super-polynomially with respect to the input
+length. In contrast, Transformers with standard numerical precision can
+efficiently handle these tasks with significantly smaller model sizes. We
+further support our theoretical findings through empirical experiments that
+explore the impact of varying numerical precision on arithmetic tasks,
+providing valuable insights for improving the mathematical reasoning
+capabilities of LLMs.",machine learning
+Diffusing States and Matching Scores: A New Framework for Imitation Learning,"Runzhe Wu, Yiding Chen, Gokul Swamy, Kianté Brantley, Wen Sun",2024-10-17,"Adversarial Imitation Learning is traditionally framed as a two-player
+zero-sum game between a learner and an adversarially chosen cost function, and
+can therefore be thought of as the sequential generalization of a Generative
+Adversarial Network (GAN). A prominent example of this framework is Generative
+Adversarial Imitation Learning (GAIL). However, in recent years, diffusion
+models have emerged as a non-adversarial alternative to GANs that merely
+require training a score function via regression, yet produce generations of a
+higher quality. In response, we investigate how to lift insights from diffusion
+modeling to the sequential setting. We propose diffusing states and performing
+score-matching along diffused states to measure the discrepancy between the
+expert's and learner's states. Thus, our approach only requires training score
+functions to predict noises via standard regression, making it significantly
+easier and more stable to train than adversarial methods. Theoretically, we
+prove first- and second-order instance-dependent bounds with linear scaling in
+the horizon, proving that our approach avoids the compounding errors that
+stymie offline approaches to imitation learning. Empirically, we show our
+approach outperforms GAN-style imitation learning baselines across various
+continuous control problems, including complex tasks like controlling humanoids
+to walk, sit, and crawl.",machine learning
+AutoAL: Automated Active Learning with Differentiable Query Strategy Search,"Yifeng Wang, Xueying Zhan, Siyu Huang",2024-10-17,"As deep learning continues to evolve, the need for data efficiency becomes
+increasingly important. Considering labeling large datasets is both
+time-consuming and expensive, active learning (AL) provides a promising
+solution to this challenge by iteratively selecting the most informative
+subsets of examples to train deep neural networks, thereby reducing the
+labeling cost. However, the effectiveness of different AL algorithms can vary
+significantly across data scenarios, and determining which AL algorithm best
+fits a given task remains a challenging problem. This work presents the first
+differentiable AL strategy search method, named AutoAL, which is designed on
+top of existing AL sampling strategies. AutoAL consists of two neural nets,
+named SearchNet and FitNet, which are optimized concurrently under a
+differentiable bi-level optimization framework. For any given task, SearchNet
+and FitNet are iteratively co-optimized using the labeled data, learning how
+well a set of candidate AL algorithms perform on that task. With the optimal AL
+strategies identified, SearchNet selects a small subset from the unlabeled pool
+for querying their annotations, enabling efficient training of the task model.
+Experimental results demonstrate that AutoAL consistently achieves superior
+accuracy compared to all candidate AL algorithms and other selective AL
+approaches, showcasing its potential for adapting and integrating multiple
+existing AL methods across diverse tasks and domains. Code will be available
+at: https://github.com/haizailache999/AutoAL.",machine learning
+Retrospective Learning from Interactions,"Zizhao Chen, Mustafa Omer Gul, Yiwei Chen, Gloria Geng, Anne Wu, Yoav Artzi",2024-10-17,"Multi-turn interactions between large language models (LLMs) and users
+naturally include implicit feedback signals. If an LLM responds in an
+unexpected way to an instruction, the user is likely to signal it by rephrasing
+the request, expressing frustration, or pivoting to an alternative task. Such
+signals are task-independent and occupy a relatively constrained subspace of
+language, allowing the LLM to identify them even if it fails on the actual
+task. This creates an avenue for continually learning from interactions without
+additional annotations. We introduce ReSpect, a method to learn from such
+signals in past interactions via retrospection. We deploy ReSpect in a new
+multimodal interaction scenario, where humans instruct an LLM to solve an
+abstract reasoning task with a combinatorial solution space. Through thousands
+of interactions with humans, we show how ReSpect gradually improves task
+completion rate from 31% to 82%, all without any external annotation.",machine learning
+Influence Functions for Scalable Data Attribution in Diffusion Models,"Bruno Mlodozeniec, Runa Eschenhagen, Juhan Bae, Alexander Immer, David Krueger, Richard Turner",2024-10-17,"Diffusion models have led to significant advancements in generative
+modelling. Yet their widespread adoption poses challenges regarding data
+attribution and interpretability. In this paper, we aim to help address such
+challenges in diffusion models by developing an \textit{influence functions}
+framework. Influence function-based data attribution methods approximate how a
+model's output would have changed if some training data were removed. In
+supervised learning, this is usually used for predicting how the loss on a
+particular example would change. For diffusion models, we focus on predicting
+the change in the probability of generating a particular example via several
+proxy measurements. We show how to formulate influence functions for such
+quantities and how previously proposed methods can be interpreted as particular
+design choices in our framework. To ensure scalability of the Hessian
+computations in influence functions, we systematically develop K-FAC
+approximations based on generalised Gauss-Newton matrices specifically tailored
+to diffusion models. We recast previously proposed methods as specific design
+choices in our framework and show that our recommended method outperforms
+previous data attribution approaches on common evaluations, such as the Linear
+Data-modelling Score (LDS) or retraining without top influences, without the
+need for method-specific hyperparameter tuning.",machine learning
+From Gradient Clipping to Normalization for Heavy Tailed SGD,"Florian Hübler, Ilyas Fatkhullin, Niao He",2024-10-17,"Recent empirical evidence indicates that many machine learning applications
+involve heavy-tailed gradient noise, which challenges the standard assumptions
+of bounded variance in stochastic optimization. Gradient clipping has emerged
+as a popular tool to handle this heavy-tailed noise, as it achieves good
+performance in this setting both theoretically and practically. However, our
+current theoretical understanding of non-convex gradient clipping has three
+main shortcomings. First, the theory hinges on large, increasing clipping
+thresholds, which are in stark contrast to the small constant clipping
+thresholds employed in practice. Second, clipping thresholds require knowledge
+of problem-dependent parameters to guarantee convergence. Lastly, even with
+this knowledge, current sampling complexity upper bounds for the method are
+sub-optimal in nearly all parameters. To address these issues, we study
+convergence of Normalized SGD (NSGD). First, we establish a parameter-free
+sample complexity for NSGD of
+$\mathcal{O}\left(\varepsilon^{-\frac{2p}{p-1}}\right)$ to find an
+$\varepsilon$-stationary point. Furthermore, we prove tightness of this result,
+by providing a matching algorithm-specific lower bound. In the setting where
+all problem parameters are known, we show this complexity is improved to
+$\mathcal{O}\left(\varepsilon^{-\frac{3p-2}{p-1}}\right)$, matching the
+previously known lower bound for all first-order methods in all problem
+dependent parameters. Finally, we establish high-probability convergence of
+NSGD with a mild logarithmic dependence on the failure probability. Our work
+complements the studies of gradient clipping under heavy tailed noise improving
+the sample complexities of existing algorithms and offering an alternative
+mechanism to achieve high probability convergence.",machine learning
+SimLayerKV: A Simple Framework for Layer-Level KV Cache Reduction,"Xuan Zhang, Cunxiao Du, Chao Du, Tianyu Pang, Wei Gao, Min Lin",2024-10-17,"Recent advancements in large language models (LLMs) have extended their
+capabilities to handle long contexts. However, increasing the number of model
+layers and the length of input sequences significantly escalates the memory
+required to store key-value (KV) cache, posing challenges for efficient
+inference. To mitigate this issue, we present SimLayerKV, a simple yet
+effective method that reduces inter-layer KV cache redundancies by selectively
+dropping cache in identified lazy layers. Our approach is based on the
+observation that certain layers in long-context LLMs exhibit ""lazy"" behavior,
+contributing less to modeling long-range dependencies compared to non-lazy
+layers. By analyzing attention weight patterns, we find that the behavior of
+these lazy layers is consistent across tokens during generation for a given
+input. This insight motivates our SimLayerKV, which identifies lazy layers and
+reduces their KV cache accordingly. SimLayerKV is training-free, generalizable,
+and can be implemented with only seven lines of code. We conduct extensive
+experiments on three representative LLMs, e.g., LLaMA2-7B, LLaMA3-8B, and
+Mistral-7B across 16 tasks from the LongBench benchmark. The results
+demonstrate that SimLayerKV achieves a KV cache compression ratio of 5$\times$
+with only a 1.2% performance drop when combined with 4-bit quantization. Our
+code is available at https://github.com/sail-sg/SimLayerKV.",machine learning
+A Unified View of Delta Parameter Editing in Post-Trained Large-Scale Models,"Qiaoyu Tang, Le Yu, Bowen Yu, Hongyu Lin, Keming Lu, Yaojie Lu, Xianpei Han, Le Sun",2024-10-17,"Post-training has emerged as a crucial paradigm for adapting large-scale
+pre-trained models to various tasks, whose effects are fully reflected by delta
+parameters (i.e., the disparity between post-trained and pre-trained
+parameters). While numerous studies have explored delta parameter properties
+via operations like pruning, quantization, low-rank approximation, and
+extrapolation, a unified framework for systematically examining these
+characteristics has been lacking. In this paper, we propose a novel perspective
+based on Riemann sum approximation of the loss function to elucidate delta
+parameter editing operations. Our analysis categorizes existing methods into
+three classes based on their post-editing performance: competitive, decreased,
+and improved, explaining how they are expressed by the Riemann sum
+approximation term and how they alter the model performance. Extensive
+experiments on both visual and language models, including ViT, LLaMA 3, Qwen 2,
+and Mistral, corroborate our theoretical findings. Furthermore, we introduce
+extensions to existing techniques like DARE and BitDelta, highlighting their
+limitations in leveraging the properties of delta parameters and reorganizing
+them into general expressions to enhance the applicability and effectiveness of
+delta parameter editing in post-trained models.",machine learning
+ORSO: Accelerating Reward Design via Online Reward Selection and Policy Optimization,"Chen Bo Calvin Zhang, Zhang-Wei Hong, Aldo Pacchiano, Pulkit Agrawal",2024-10-17,"Reward shaping is a critical component in reinforcement learning (RL),
+particularly for complex tasks where sparse rewards can hinder learning. While
+shaping rewards have been introduced to provide additional guidance, selecting
+effective shaping functions remains challenging and computationally expensive.
+This paper introduces Online Reward Selection and Policy Optimization (ORSO), a
+novel approach that frames shaping reward selection as an online model
+selection problem. ORSO employs principled exploration strategies to
+automatically identify promising shaping reward functions without human
+intervention, balancing exploration and exploitation with provable regret
+guarantees. We demonstrate ORSO's effectiveness across various continuous
+control tasks using the Isaac Gym simulator. Compared to traditional methods
+that fully evaluate each shaping reward function, ORSO significantly improves
+sample efficiency, reduces computational time, and consistently identifies
+high-quality reward functions that produce policies comparable to those
+generated by domain experts through hand-engineered rewards.",machine learning
+Neural Projected Quantum Dynamics: a systematic study,"Luca Gravina, Vincenzo Savona, Filippo Vicentini",2024-10-14,"We address the challenge of simulating unitary quantum dynamics in large
+systems using Neural Quantum States, focusing on overcoming the computational
+instabilities and high cost of existing methods. This work offers a
+comprehensive formalization of the projected time-dependent Variational Monte
+Carlo (p-tVMC) method by thoroughly analyzing its two essential components:
+stochastic infidelity minimization and discretization of the unitary evolution.
+We investigate neural infidelity minimization using natural gradient descent
+strategies, identifying the most stable stochastic estimators and introducing
+adaptive regularization strategies that eliminate the need for manual
+adjustment of the hyperparameter along the dynamics. We formalize the specific
+requirements that p-tVMC imposes on discretization schemes for them to be
+efficient, and introduce four high-order integration schemes combining Taylor
+expansions, Pad\'e approximants, and Trotter splitting to enhance accuracy and
+scalability. We benchmark our adaptive methods against a 2D Ising quench,
+matching state of the art techniques without manual tuning of hyperparameters.
+This work establishes p-tVMC as a highly promising framework for addressing
+complex quantum dynamics, offering a compelling alternative for researchers
+looking to push the boundaries of quantum simulations.",neural quantum states
+Vision Transformer Neural Quantum States for Impurity Models,"Xiaodong Cao, Zhicheng Zhong, Yi Lu",2024-08-23,"Transformer neural networks, known for their ability to recognize complex
+patterns in high-dimensional data, offer a promising framework for capturing
+many-body correlations in quantum systems. We employ an adapted Vision
+Transformer (ViT) architecture to model quantum impurity models, optimizing it
+with a subspace expansion scheme that surpasses conventional variational Monte
+Carlo in both accuracy and efficiency. Benchmarks against matrix product states
+in single- and three-orbital Anderson impurity models show that these ViT-based
+neural quantum states achieve comparable or superior accuracy with
+significantly fewer variational parameters. We further extend our approach to
+compute dynamical quantities by constructing a restricted excitation space that
+effectively captures relevant physical processes, yielding accurate core-level
+X-ray absorption spectra. These findings highlight the potential of ViT-based
+neural quantum states for accurate and efficient modeling of quantum impurity
+models.",neural quantum states
+Neural Quantum States and Peaked Molecular Wave Functions: Curse or Blessing?,"Aleksei Malyshev, Markus Schmitt, A. I. Lvovsky",2024-08-14,"The field of neural quantum states has recently experienced a tremendous
+progress, making them a competitive tool of computational quantum many-body
+physics. However, their largest achievements to date mostly concern interacting
+spin systems, while their utility for quantum chemistry remains yet to be
+demonstrated. Two main complications are the peaked structure of the molecular
+wave functions, which impedes sampling, and large number of terms in second
+quantised Hamiltonians, which hinders scaling to larger molecule sizes. In this
+paper we address these issues jointly and argue that the peaked structure might
+actually be key to drastically more efficient calculations. Specifically, we
+introduce a novel algorithm for autoregressive sampling without replacement and
+a procedure to calculate a computationally cheaper surrogate for the local
+energy. We complement them with a custom modification of the stochastic
+reconfiguration optimisation technique and a highly optimised GPU
+implementation. As a result, our calculations require substantially less
+resources and exhibit more than order of magnitude speedup compared to the
+previous works. On a single GPU we study molecules comprising up to 118 qubits
+and outperform the ``golden standard'' CCSD(T) benchmark in Hilbert spaces of
+$\sim 10^{15}$ Slater determinants, which is orders of magnitude larger than
+what was previously achieved. We believe that our work underscores the prospect
+of NQS for challenging quantum chemistry calculations and serves as a
+favourable ground for the future method development.",neural quantum states
+A Tutorial on the Use of Physics-Informed Neural Networks to Compute the Spectrum of Quantum Systems,"Lorenzo Brevi, Antonio Mandarino, Enrico Prati",2024-07-30,"Quantum many-body systems are of great interest for many research areas,
+including physics, biology and chemistry. However, their simulation is
+extremely challenging, due to the exponential growth of the Hilbert space with
+the system size, making it exceedingly difficult to parameterize the wave
+functions of large systems by using exact methods. Neural networks and machine
+learning in general are a way to face this challenge. For instance, methods
+like Tensor networks and Neural Quantum States are being investigated as
+promising tools to obtain the wave function of a quantum mechanical system. In
+this tutorial, we focus on a particularly promising class of deep learning
+algorithms. We explain how to construct a Physics-Informed Neural Network
+(PINN) able to solve the Schr\""odinger equation for a given potential, by
+finding its eigenvalues and eigenfunctions. This technique is unsupervised, and
+utilizes a novel computational method in a manner that is barely explored.
+PINNs are a deep learning method that exploits Automatic Differentiation to
+solve Integro-Differential Equations in a mesh-free way. We show how to find
+both the ground and the excited states. The method discovers the states
+progressively by starting from the ground state. We explain how to introduce
+inductive biases in the loss to exploit further knowledge of the physical
+system. Such additional constraints allow for a faster and more accurate
+convergence. This technique can then be enhanced by a smart choice of
+collocation points in order to take advantage of the mesh-free nature of the
+PINN. The methods are made explicit by applying them to the infinite potential
+well and the particle in a ring, a challenging problem to be learned by an
+Artificial Intelligence agent due to the presence of complex-valued
+eigenfunctions and degenerate states.",neural quantum states
+Neural Quantum State Study of Fracton Models,"Marc Machaczek, Lode Pollet, Ke Liu",2024-06-17,"Fracton models host unconventional topological orders in three and higher
+dimensions and provide promising candidates for quantum memory platforms.
+Understanding their robustness against quantum fluctuations is an important
+task but also poses great challenges due to the lack of efficient numerical
+tools. In this work, we establish neural quantum states (NQS) as new tools to
+study phase transitions in these models. Exact and efficient parametrizations
+are derived for three prototypical fracton codes - the checkerboard and X-cube
+model, as well as Haah's code - both in terms of a restricted Boltzmann machine
+(RBM) and a correlation-enhanced RBM. We then adapt the correlation-enhanced
+RBM architecture to a perturbed checkerboard model and reveal its strong
+first-order phase transition between the fracton phase and a trivial
+field-polarizing phase. To this end, we simulate this highly entangled system
+on lattices of up to 512 qubits with high accuracy, representing a cutting-edge
+application of variational neural-network methods. Our work demonstrates the
+remarkable potential of NQS in studying complicated three-dimensional problems
+and highlights physics-oriented constructions of NQS architectures.",neural quantum states
+Quantum states from normalizing flows,"Scott Lawrence, Arlee Shelby, Yukari Yamauchi",2024-06-04,"We introduce an architecture for neural quantum states for many-body
+quantum-mechanical systems, based on normalizing flows. The use of normalizing
+flows enables efficient uncorrelated sampling of configurations from the
+probability distribution defined by the wavefunction, mitigating a major cost
+of using neural states in simulation. We demonstrate the use of this
+architecture for both ground-state preparation (for self-interacting particles
+in a harmonic trap) and real-time evolution (for one-dimensional tunneling).
+Finally, we detail a procedure for obtaining rigorous estimates of the
+systematic error when using neural states to approximate quantum evolution.",neural quantum states
+Neural Quantum States in Variational Monte Carlo Method: A Brief Summary,Yuntai Song,2024-06-03,"In this note, variational Monte Carlo method based on neural quantum states
+for spin systems is reviewed. Using a neural network as the wave function
+allows for a more generalized expression of various types of interactions,
+including highly non-local interactions, which are closely related to its
+non-linear activation functions. Additionally, neural networks can represent
+relatively complex wave functions with relatively small computational resources
+when dealing with higher-dimensional systems, which is undoubtedly a
+""flattening"" advantage. In quantum-state tomography, the representation method
+of neural quantum states has already achieved significant results, hinting at
+its potential in handling larger-sized systems.",neural quantum states
+Transformer neural networks and quantum simulators: a hybrid approach for simulating strongly correlated systems,"Hannah Lange, Guillaume Bornet, Gabriel Emperauger, Cheng Chen, Thierry Lahaye, Stefan Kienle, Antoine Browaeys, Annabelle Bohrdt",2024-05-31,"Owing to their great expressivity and versatility, neural networks have
+gained attention for simulating large two-dimensional quantum many-body
+systems. However, their expressivity comes with the cost of a challenging
+optimization due to the in general rugged and complicated loss landscape. Here,
+we present a hybrid optimization scheme for neural quantum states (NQS) that
+involves a data-driven pretraining with numerical or experimental data and a
+second, Hamiltonian-driven optimization stage. By using both projective
+measurements from the computational basis as well as expectation values from
+other measurement configurations such as spin-spin correlations, our
+pretraining gives access to the sign structure of the state, yielding improved
+and faster convergence that is robust w.r.t. experimental imperfections and
+limited datasets. We apply the hybrid scheme to the ground state search for the
+2D transverse field Ising model and the 2D dipolar XY model on $6\times 6$ and
+$10\times 10$ square lattices with a patched transformer wave function, using
+numerical and experimental data from a programmable Rydberg quantum simulator
+[Chen et al., Nature 616 (2023)], with snapshots of the quantum system obtained
+from the different measurement configurations, and show that the information
+from the second basis highly improves the performance. Our work paves the way
+for a reliable and efficient optimization of neural quantum states.",neural quantum states
+Ground state phases of the two-dimension electron gas with a unified variational approach,"Conor Smith, Yixiao Chen, Ryan Levy, Yubo Yang, Miguel A. Morales, Shiwei Zhang",2024-05-29,"The two-dimensional electron gas (2DEG) is a fundamental model, which is
+drawing increasing interest because of recent advances in experimental and
+theoretical studies of 2D materials. Current understanding of the ground state
+of the 2DEG relies on quantum Monte Carlo calculations, based on variational
+comparisons of different ansatze for different phases. We use a single
+variational ansatz, a general backflow-type wave function using a
+message-passing neural quantum state architecture, for a unified description
+across the entire density range. The variational optimization consistently
+leads to lower ground-state energies than previous best results. Transition
+into a Wigner crystal (WC) phase occurs automatically at rs = 37 +/- 1, a
+density lower than currently believed. Between the liquid and WC phases, the
+same ansatz and variational search strongly suggest the existence of
+intermediate states in a broad range of densities, with enhanced short-range
+nematic spin correlations.",neural quantum states
+Structure and dynamics of electron-phonon coupled systems using neural quantum states,"Ankit Mahajan, Paul J. Robinson, Joonho Lee, David R. Reichman",2024-05-14,"In this work, we use neural quantum states (NQS) to describe the
+high-dimensional wave functions of electron-phonon coupled systems. We
+demonstrate that NQS can accurately and systematically learn the underlying
+physics of such problems through a variational Monte Carlo optimization of the
+energy with minimal incorporation of physical information even in highly
+challenging cases. We assess the ability of our approach across various lattice
+model examples featuring different types of couplings. The flexibility of our
+NQS formulation is demonstrated via application to ab initio models
+parametrized by density functional perturbation theory consisting of electron
+or hole bands coupled linearly to dispersive phonons. We compute accurate
+real-frequency spectral properties of electron-phonon systems via a novel
+formalism based on NQS. Our work establishes a general framework for exploring
+diverse ground state and dynamical phenomena arising in electron-phonon
+systems, including the non-perturbative interplay of correlated electronic and
+electron-phonon effects in systems ranging from simple lattice models to
+realistic models of materials parametrized by ab initio calculations.",neural quantum states
+Position Specific Scoring Is All You Need? Revisiting Protein Sequence Classification Tasks,"Sarwan Ali, Taslim Murad, Prakash Chourasia, Haris Mansoor, Imdad Ullah Khan, Pin-Yu Chen, Murray Patterson",2024-10-16,"Understanding the structural and functional characteristics of proteins are
+crucial for developing preventative and curative strategies that impact fields
+from drug discovery to policy development. An important and popular technique
+for examining how amino acids make up these characteristics of the protein
+sequences with position-specific scoring (PSS). While the string kernel is
+crucial in natural language processing (NLP), it is unclear if string kernels
+can extract biologically meaningful information from protein sequences, despite
+the fact that they have been shown to be effective in the general sequence
+analysis tasks. In this work, we propose a weighted PSS kernel matrix (or
+W-PSSKM), that combines a PSS representation of protein sequences, which
+encodes the frequency information of each amino acid in a sequence, with the
+notion of the string kernel. This results in a novel kernel function that
+outperforms many other approaches for protein sequence classification. We
+perform extensive experimentation to evaluate the proposed method. Our findings
+demonstrate that the W-PSSKM significantly outperforms existing baselines and
+state-of-the-art methods and achieves up to 45.1\% improvement in
+classification accuracy.",all you need
+Reddit is all you need: Authorship profiling for Romanian,"Ecaterina Ştefănescu, Alexandru-Iulius Jerpelea",2024-10-13,"Authorship profiling is the process of identifying an author's
+characteristics based on their writings. This centuries old problem has become
+more intriguing especially with recent developments in Natural Language
+Processing (NLP). In this paper, we introduce a corpus of short texts in the
+Romanian language, annotated with certain author characteristic keywords; to
+our knowledge, the first of its kind. In order to do this, we exploit a social
+media platform called Reddit. We leverage its thematic community-based
+structure (subreddits structure), which offers information about the author's
+background. We infer an user's demographic and some broad personal traits, such
+as age category, employment status, interests, and social orientation based on
+the subreddit and other cues. We thus obtain a 23k+ samples corpus, extracted
+from 100+ Romanian subreddits. We analyse our dataset, and finally, we
+fine-tune and evaluate Large Language Models (LLMs) to prove baselines
+capabilities for authorship profiling using the corpus, indicating the need for
+further research in the field. We publicly release all our resources.",all you need
+Dying Clusters Is All You Need -- Deep Clustering With an Unknown Number of Clusters,"Collin Leiber, Niklas Strauß, Matthias Schubert, Thomas Seidl",2024-10-12,"Finding meaningful groups, i.e., clusters, in high-dimensional data such as
+images or texts without labeled data at hand is an important challenge in data
+mining. In recent years, deep clustering methods have achieved remarkable
+results in these tasks. However, most of these methods require the user to
+specify the number of clusters in advance. This is a major limitation since the
+number of clusters is typically unknown if labeled data is unavailable. Thus,
+an area of research has emerged that addresses this problem. Most of these
+approaches estimate the number of clusters separated from the clustering
+process. This results in a strong dependency of the clustering result on the
+quality of the initial embedding. Other approaches are tailored to specific
+clustering processes, making them hard to adapt to other scenarios. In this
+paper, we propose UNSEEN, a general framework that, starting from a given upper
+bound, is able to estimate the number of clusters. To the best of our
+knowledge, it is the first method that can be easily combined with various deep
+clustering algorithms. We demonstrate the applicability of our approach by
+combining UNSEEN with the popular deep clustering algorithms DCN, DEC, and DKM
+and verify its effectiveness through an extensive experimental evaluation on
+several image and tabular datasets. Moreover, we perform numerous ablations to
+analyze our approach and show the importance of its components. The code is
+available at: https://github.com/collinleiber/UNSEEN",all you need
+Looped ReLU MLPs May Be All You Need as Practical Programmable Computers,"Yingyu Liang, Zhizhou Sha, Zhenmei Shi, Zhao Song, Yufa Zhou",2024-10-12,"Previous work has demonstrated that attention mechanisms are Turing complete.
+More recently, it has been shown that a looped 13-layer Transformer can
+function as a universal programmable computer. In contrast, the multi-layer
+perceptrons with $\mathsf{ReLU}$ activation ($\mathsf{ReLU}$-$\mathsf{MLP}$),
+one of the most fundamental components of neural networks, is known to be
+expressive; specifically, a two-layer neural network is a universal
+approximator given an exponentially large number of hidden neurons. However, it
+remains unclear whether a $\mathsf{ReLU}$-$\mathsf{MLP}$ can be made into a
+universal programmable computer using a practical number of weights. In this
+work, we provide an affirmative answer that a looped 23-layer
+$\mathsf{ReLU}$-$\mathsf{MLP}$ is capable to perform the basic necessary
+operations, effectively functioning as a programmable computer. This indicates
+that simple modules have stronger expressive power than previously expected and
+have not been fully explored. Our work provides insights into the mechanisms of
+neural networks and demonstrates that complex tasks, such as functioning as a
+programmable computer, do not necessarily require advanced architectures like
+Transformers.",all you need
+Rethinking Data Selection at Scale: Random Selection is Almost All You Need,"Tingyu Xia, Bowen Yu, Kai Dang, An Yang, Yuan Wu, Yuan Tian, Yi Chang, Junyang Lin",2024-10-12,"Supervised fine-tuning (SFT) is crucial for aligning Large Language Models
+(LLMs) with human instructions. The primary goal during SFT is to select a
+small yet representative subset of training data from the larger pool, such
+that fine-tuning with this subset achieves results comparable to or even
+exceeding those obtained using the entire dataset. However, most existing data
+selection techniques are designed for small-scale data pools, which fail to
+meet the demands of real-world SFT scenarios. In this paper, we replicated
+several self-scoring methods those that do not rely on external model
+assistance on two million scale datasets, and found that nearly all methods
+struggled to significantly outperform random selection when dealing with such
+large-scale data pools. Moreover, our comparisons suggest that, during SFT,
+diversity in data selection is more critical than simply focusing on high
+quality data. We also analyzed the limitations of several current approaches,
+explaining why they perform poorly on large-scale datasets and why they are
+unsuitable for such contexts. Finally, we found that filtering data by token
+length offers a stable and efficient method for improving results. This
+approach, particularly when training on long text data, proves highly
+beneficial for relatively weaker base models, such as Llama3.",all you need
+Simulation-based inference with scattering representations: scattering is all you need,"Kiyam Lin, Benjamin Joachimi, Jason D. McEwen",2024-10-11,"We demonstrate the first successful use of scattering representations without
+further compression for simulation-based inference (SBI) with images (i.e.
+field-level), illustrated with a cosmological case study. Scattering
+representations provide a highly effective representational space for
+subsequent learning tasks, although the higher dimensional compressed space
+introduces challenges. We overcome these through spatial averaging, coupled
+with more expressive density estimators. Compared to alternative methods, such
+an approach does not require additional simulations for either training or
+computing derivatives, is interpretable, and resilient to covariate shift. As
+expected, we show that a scattering only approach extracts more information
+than traditional second order summary statistics.",all you need
+Noise is All You Need: Private Second-Order Convergence of Noisy SGD,"Dmitrii Avdiukhin, Michael Dinitz, Chenglin Fan, Grigory Yaroslavtsev",2024-10-09,"Private optimization is a topic of major interest in machine learning, with
+differentially private stochastic gradient descent (DP-SGD) playing a key role
+in both theory and practice. Furthermore, DP-SGD is known to be a powerful tool
+in contexts beyond privacy, including robustness, machine unlearning, etc.
+Existing analyses of DP-SGD either make relatively strong assumptions (e.g.,
+Lipschitz continuity of the loss function, or even convexity) or prove only
+first-order convergence (and thus might end at a saddle point in the non-convex
+setting). At the same time, there has been progress in proving second-order
+convergence of the non-private version of ``noisy SGD'', as well as progress in
+designing algorithms that are more complex than DP-SGD and do guarantee
+second-order convergence. We revisit DP-SGD and show that ``noise is all you
+need'': the noise necessary for privacy already implies second-order
+convergence under the standard smoothness assumptions, even for non-Lipschitz
+loss functions. Hence, we get second-order convergence essentially for free:
+DP-SGD, the workhorse of modern private optimization, under minimal assumptions
+can be used to find a second-order stationary point.",all you need
+Is Pontryagin's Maximum Principle all you need? Solving optimal control problems with PMP-inspired neural networks,"Kawisorn Kamtue, Jose M. F. Moura, Orathai Sangpetch",2024-10-08,"Calculus of Variations is the mathematics of functional optimization, i.e.,
+when the solutions are functions over a time interval. This is particularly
+important when the time interval is unknown like in minimum-time control
+problems, so that forward in time solutions are not possible. Calculus of
+Variations offers a robust framework for learning optimal control and
+inference. How can this framework be leveraged to design neural networks to
+solve challenges in control and inference? We propose the Pontryagin's Maximum
+Principle Neural Network (PMP-net) that is tailored to estimate control and
+inference solutions, in accordance with the necessary conditions outlined by
+Pontryagin's Maximum Principle. We assess PMP-net on two classic optimal
+control and inference problems: optimal linear filtering and minimum-time
+control. Our findings indicate that PMP-net can be effectively trained in an
+unsupervised manner to solve these problems without the need for ground-truth
+data, successfully deriving the classical ""Kalman filter"" and ""bang-bang""
+control solution. This establishes a new approach for addressing general,
+possibly yet unsolved, optimal control problems.",all you need
+Grounding is All You Need? Dual Temporal Grounding for Video Dialog,"You Qin, Wei Ji, Xinze Lan, Hao Fei, Xun Yang, Dan Guo, Roger Zimmermann, Lizi Liao",2024-10-08,"In the realm of video dialog response generation, the understanding of video
+content and the temporal nuances of conversation history are paramount. While a
+segment of current research leans heavily on large-scale pretrained
+visual-language models and often overlooks temporal dynamics, another delves
+deep into spatial-temporal relationships within videos but demands intricate
+object trajectory pre-extractions and sidelines dialog temporal dynamics. This
+paper introduces the Dual Temporal Grounding-enhanced Video Dialog model
+(DTGVD), strategically designed to merge the strengths of both dominant
+approaches. It emphasizes dual temporal relationships by predicting dialog
+turn-specific temporal regions, filtering video content accordingly, and
+grounding responses in both video and dialog contexts. One standout feature of
+DTGVD is its heightened attention to chronological interplay. By recognizing
+and acting upon the dependencies between different dialog turns, it captures
+more nuanced conversational dynamics. To further bolster the alignment between
+video and dialog temporal dynamics, we've implemented a list-wise contrastive
+learning strategy. Within this framework, accurately grounded turn-clip
+pairings are designated as positive samples, while less precise pairings are
+categorized as negative. This refined classification is then funneled into our
+holistic end-to-end response generation mechanism. Evaluations using
+AVSD@DSTC-7 and AVSD@DSTC-8 datasets underscore the superiority of our
+methodology.",all you need
+Multicritical-Point Principle Is All You Need for Toponium,Yoshiki Matsuoka,2024-10-07,"In this paper, the coupling constant of a newly discovered top quark pair is
+predicted. For this purpose, this paper considers a pseudo scalar mediating top
+quarks. For predicting the coupling constant, the multicritical-point principle
+(MPP) is used to determine the effective potential. And a few remarks will be
+made on the non-perturbative effects of toponium. As a result, the coupling
+constant of a newly discovered top quark pair is predicted to be about
+$0.85$--$0.86$. The pseudo scalar field is also found to improve the vacuum
+stability associated with the Higgs field.",all you need
