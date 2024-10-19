@@ -22,6 +22,8 @@ jobs:
       run: python src/autofetch.py
     - name: Commit and push results
       run: |
+        git config --global user.email "2969646132@qq.com"
+        git config --global user.name "cyy202419"
         git add .
         git commit -m "Update arxiv results"
         git push
