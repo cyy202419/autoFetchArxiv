@@ -5,6 +5,8 @@ on:
   schedule:
     - cron: '0 0 * * *'
 
+permissions: write-all
+
 jobs:
   check-arxiv:
     runs-on: ubuntu-latest
