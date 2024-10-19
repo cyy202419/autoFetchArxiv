@@ -19,7 +19,7 @@ jobs:
         python -m pip install --upgrade pip
         pip install arxiv pandas
     - name: Run Python script
-      run: python arxiv_autosearch.py
+      run: python ./arxiv_autosearch.py
     - name: Commit and push results
       run: |
         git add.
