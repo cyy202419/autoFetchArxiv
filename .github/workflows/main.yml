@@ -22,6 +22,6 @@ jobs:
       run: python src/autofetch.py
     - name: Commit and push results
       run: |
-        git add.
+        git add .
         git commit -m "Update arxiv results"
         git push
